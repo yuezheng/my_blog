@@ -10,8 +10,8 @@ title: 快乐骑士
 email: zyzzy0602@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   记录&分享 工作&生活
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yuezheng.github.io/my_blog" # the base hostname & protocol for your site
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "http://yuezheng.github.io" # the base hostname & protocol for your site
 github_username:  yuezheng
 
 # Build settings
