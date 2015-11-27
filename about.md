@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-![remote.jpg](/images/remote.jgp)
+![remote.jpg](/my_blog/images/remote.jpg)
