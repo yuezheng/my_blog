@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "搭建OpenStack多Region环境"
+date:   2015-11-30 21:28:17 +0800
+categories: OpenStack
+---
+
 #搭建OpenStack多Region环境
 
 ###Region
