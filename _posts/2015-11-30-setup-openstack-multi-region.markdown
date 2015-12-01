@@ -48,6 +48,8 @@ Region 是OpenStack中的一个概念，类似的还有Available Zone, Aggregate
 
 关于endpoint中的三种url，其实很好理解，就是为了将不同的服务请求负载到不同的服务地址，一方面提高安全性，一方面方便管理。
 
+当多Region环境配置完成后，你可能会发现一些命令行工具没办法使用了，这时需要导入一个额外的环境变量： OS_REGION_NAME，值的话就是你所希望使用的Region名称(同时也是ID)。方便起见直接写到localrc文件中： export OS_REGION_NAME=RegionOne
+
 上面过程中创建endpoint是个力气活，全靠手动创建的话还容易出错，我特定写了个小脚本来处理：
 [yuezheng/RegionBuilder](https://github.com/yuezheng/RegionBuilder)
 
