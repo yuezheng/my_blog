@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Cinder可启动卷缓存浅析"
+title:  "Cinder可启动卷缓存机制浅析"
 categories: OpenStack
 ---
 
-#Cinder可启动卷缓存浅析
+#Cinder可启动卷缓存机制浅析
 
 ###术语和称谓
 <pre>
@@ -16,7 +16,7 @@ Volume-backed Image: 以卷作为镜像后端
 ###可启动卷的应用场景
 Cinder是OpenStack中提供块存储(Block Storage)管理服务的模块，同其他模块一样，Cinder仅提供管理而不提供真正的存储能力，该能力由其后端来提供，Cinder可以适配多种后端存储，从而达到灵活管理。
 
-卷是Cinder管理的基本资源，一般的，卷被挂载到虚拟机上为存储数据所用，其生命周期与虚拟机相分离，因而被视为“永久的数据存储”。另外OpenStack还提供了从卷启动(Boot from volume)的功能，即由可启动卷来创建虚拟机。
+卷是Cinder管理的基本资源，一般的，卷被挂载到虚拟机上为存储数据所用，其生命周期与虚拟机相分离，因而被视为“永久的数据存储”。另外OpenStack还提供了从卷启动(Boot from volume)的功能，即由可启动卷来启动虚拟机。
 
 ###从卷启动的优和劣
 从卷启动为OpenStack对接块存储设备提供了一种解决方案，而且有很多优势：
