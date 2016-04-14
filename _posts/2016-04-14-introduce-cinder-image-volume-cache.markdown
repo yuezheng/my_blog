@@ -55,14 +55,14 @@ Cinder是OpenStack中提供块存储(Block Storage)管理服务的模块，同�
 <pre><code>
 Liberty版本中默认不启用卷缓存特性，需要另外配置：
 vim /etc/cinder/cinder.conf
-image_volume_cache_enabled = True  # 是否启用镜像缓存功能
-image_volume_cache_max_size_gb = 100 # 镜像缓存的总容量
-image_volume_cache_max_count = 10 # 镜像缓存的总个数
-cinder_internal_tenant_project_id = 0f7d9f0f103642df9b1c2def87bca486 # cinder用户所在的项目(即service项目)id
-cinder_internal_tenant_user_id = 8bb3be9e49f049a69088c39aa0a81266 # cinder用户id
+image\_volume\_cache\_enabled = True  # 是否启用镜像缓存功能
+image\_volume\_cache\_max\_size\_gb = 100 # 镜像缓存的总容量
+image\_volume\_cache\_max\_count = 10 # 镜像缓存的总个数
+cinder\_internal\_tenant\_project\_id = 0f7d9f0f103642df9b1c2def87bca486 # cinder用户所在的项目(即service项目)id
+cinder\_internal\_tenant\_user\_id = 8bb3be9e49f049a69088c39aa0a81266 # cinder用户id
 </code></pre>
 
-* 数据库中新建image_volume_cache_entries表，用以保存卷和镜像的关联;
+* 数据库中新建image\_volume\_cache\_entries表，用以保存卷和镜像的关联;
 * 当由镜像创建卷时，根据数据库记录判断是否由该镜像创建过可启动卷：
     * 若未创建过(或之前的卷不在当前主机上)则向glance请求下载镜像,将镜像数据转入新卷中，然后由该新卷clone一个缓存卷(归属于所配置的Service项目);更新数据库表中的缓存记录;
     * 若创建过(并且卷在当前主机上)，则由缓存卷clone出新卷(该clone功能直接由底层服务提供),若新卷与请求的卷大小不一致，则扩展(Extend)该卷;
