@@ -15,4 +15,4 @@ url: "http://yuezheng.github.io" # the base hostname & protocol for your site
 github_username:  yuezheng
 
 # Build settings
-markdown: kramdown
+markdown: markdown
