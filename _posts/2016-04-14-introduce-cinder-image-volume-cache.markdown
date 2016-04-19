@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Cinder可启动卷缓存机制浅析"
+description: "介绍OpenStack Cinder模块中Image Volume(可启动卷)的缓存机制, 包括可启动卷的应用场景,缓存存储及匹配过程等"
+tags: [OpenStack, Cinder, Storage]
 categories: OpenStack
 ---
 
