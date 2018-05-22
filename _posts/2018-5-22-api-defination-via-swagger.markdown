@@ -66,19 +66,19 @@ API定义采用的 OpenAPI规范(默认2.0，最新3.0)，具体编写格式可�
   * 使用Atom asciidoc preview工具预览AsciiDoc文件：
     * 使用Atom打开AsciiDoc文件；
     * 启用预览：
-    ![start_overview.png](my_blog/images/start_overview.png)
+    ![start_overview.png](/my_blog/images/start_overview.png)
     
     预览结果：
-    ![overview_result.png](my_blog/images/overview_result.png)
+    ![overview_result.png](/my_blog/images/overview_result.png)
     * 保存为html或pdf(需要安装转换插件)：
-    ![save_overview.png](my_blog/images/save_overview.png)
+    ![save_overview.png](/my_blog/images/save_overview.png)
     
   * 使用Chrom浏览器Asciidoctor.js Live Preview插件进行预览:
     
     * 安装Asciidoctor.js Live Preview插件后，使用Chrome打开AsciiDoc文件:
-    ![asciidoctor_overview](my_blog/images/asciidoctor_overview.png)
+    ![asciidoctor_overview.png](/my_blog/images/asciidoctor_overview.png)
     * 开启插件进行预览：
-    ![asciieditor_start.pn](my_blog/images/asciieditor_start.pn)
+    ![asciieditor_start.pn](/my_blog/images/asciieditor_start.pn)
     然后根据需要可以将页面打印为PDF格式。
     
 以上为从定义API到按指定格式输出的完成过程，整个过程比较复杂，用到的组件比较多，如果仅仅是编写API文档可能看起来效率比较低；选择Swagger用来作为API定义工具，主要出于以下考虑：
