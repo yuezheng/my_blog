@@ -5,7 +5,6 @@ description: "介绍使用Swagger工具集定义API文档的过程"
 tags: [API, Swagger]
 categories: 设计
 ---
-# 使用Swagger编写API文档"
 
 使用到的工具：
   1. swagger-editor: Web版API文档编辑器，可视化输出；
@@ -14,7 +13,7 @@ categories: 设计
   4. swagger2markup: 将API文档(yaml格式)转换为asciidoc格式；
   5. 使用asciidoc预览工具(atom asciidoc preview或chrome asciidoc preview扩展)以html的形式预览，即可下载为pdf格式；
   
-### 一，使用swagger-editor编写API定义文档
+### 使用swagger-editor编写API定义文档
 运行swagger-editor:
 * 方式一：从DockerHub下载swagger-editor 镜像，启动容器：
 <pre>docker pull swaggerapi/swagger-editor
