@@ -3,7 +3,7 @@ layout: post
 title:  "知识连线：从集成测试到Linux信号"
 description: "记录CI过程及问题"
 tags: [CI, Docker, Linux]
-categories: 技术
+categories: 研发过程
 ---
 
 ### 引子
@@ -26,7 +26,7 @@ categories: 技术
 比如一套典型的Flask + Celery实现的系统，其组件大概包括：
 * web-API
 * DB
-* broker(rabbitMQ/Radis)
+* broker(rabbitMQ/Redis)
 * celery-worker
 
 那么我们可以这样组织容器(docker compose)：
